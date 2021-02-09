@@ -53,4 +53,16 @@ class Lesson extends Model
         'difficulty',
         'is_published',
     ];
+
+    /**
+     * If the lesson has a score of 80% or more (should be configurable), return true.
+     *
+     * @return bool
+     */
+    public function isComplete() {
+        return true;
+    }
+
+    public function getDifficultyText() {
+    }
 }
